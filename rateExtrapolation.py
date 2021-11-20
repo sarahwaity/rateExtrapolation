@@ -9,6 +9,8 @@ import matplotlib.backends.backend_pdf
 import datetime
 import tellurium as te
 import SBstoat as SB
+<<<<<<< HEAD
+=======
 import urllib.request
 from SBstoat.namedTimeseries import NamedTimeseries, TIME
 from SBstoat.modelFitter import ModelFitter
@@ -175,6 +177,7 @@ def parameter_estimation_fittness_evaluator(estimates_df, folds, model):
 
 
 
+>>>>>>> 087e231176eaedf13d6d45118e67e77529b2de7d
 
 
 
@@ -198,6 +201,11 @@ def rate_Extrapolation(experimental_data, antimony, rates, folds = 25):
     pdf of three output plots saved to path
     excel sheet of model simulated data'''
     
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 087e231176eaedf13d6d45118e67e77529b2de7d
     # determining time span to simulate TE road runner
     # designates in the inital and final value of the time column...
     # and the number of instances to determin [start,step,end]
@@ -205,6 +213,10 @@ def rate_Extrapolation(experimental_data, antimony, rates, folds = 25):
     t_end = experimental_data.T.iloc[0].values[-1]
     t_steps = len(experimental_data.T.iloc[0].values)
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 087e231176eaedf13d6d45118e67e77529b2de7d
     # Setting up list of pathway parameters
     pathway_parameters = []
     for rate in rates:   
@@ -214,6 +226,10 @@ def rate_Extrapolation(experimental_data, antimony, rates, folds = 25):
     #generates Road-Runner Model for downstream analysis
     model = te.loada(antimony)
     
+<<<<<<< HEAD
+
+=======
+>>>>>>> 087e231176eaedf13d6d45118e67e77529b2de7d
     cross_val_df = K_folds_data_splitter(experimental_data, folds)
     print('Data Split!')
     print('Parameters Estimating...')
