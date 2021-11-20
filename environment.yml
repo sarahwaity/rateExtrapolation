@@ -1,0 +1,9 @@
+name: virtual_environment
+channels:
+  - defaults
+dependencies:
+  - matplotlib == 3.3.4
+  - numpy == 1.20.2
+  - pandas == 1.2.4
+  - SBstoat == 1.161
+  - tellurium == 2.2.0
