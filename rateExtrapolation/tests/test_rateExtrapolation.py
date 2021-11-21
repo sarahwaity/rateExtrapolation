@@ -4,7 +4,7 @@ This file will be used to test the rateExtrapolation.py file.
 
 # Import cleaning and splitting
 
-from rateExtrapolation import rateExtrapolation
+from rate_Extrapolation import rateExtrapolation
 
 # Importing libraries for property tests
 import math
