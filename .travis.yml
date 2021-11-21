@@ -32,8 +32,8 @@ install:
     - conda install --yes coverage coveralls flake8 pytest pytest-cov coverage
     
 # a list of commands to run before the main script
-before_script:
-    - flake8 rateExtrapolation --per-file-ignores="__init__.py:F401,F811"
+# before_script:
+#     - flake8 rateExtrapolation --per-file-ignores="__init__.py:F401,F811"
 
 # the actual commands to run
 script:
