@@ -10,6 +10,7 @@ from SBstoat_model_fitting_to_folds import SBstoat_model_fitting_to_folds
 import math
 import pandas as pd
 import numpy as np
+import SBstoat as SB
 
 
 # In[2]:
