@@ -6,7 +6,7 @@ This file will be used to test the parameter_estimation_fitness_evaluator.py fil
 from K_folds_data_splitter import K_folds_data_splitter
 from SBstoat_model_fitting_to_folds import SBstoat_model_fitting_to_folds
 from parameter_estimation_fitness_evaluator import parameter_estimation_fitness_evaluator
-import tellurium as TE
+import tellurium as te
 
 
 # Importing libraries for property tests
