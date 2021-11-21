@@ -56,8 +56,8 @@ def test_k_folds_data_splitter_3():
     '''
     folds = 4
     df = K_folds_data_splitter(data,folds)
-    test_set_length = df.loc['Test'][0]
-    train_set_length = df.loc['Train'][0]
+    test_set_length = len(df.loc['Test'][0])
+    train_set_length = len(df.loc['Train'][0])
     
     assert test_set_length < train_set_length, (
         "Test set contains more samples than train_set, issues with assignment, may need to decrease fold number")
