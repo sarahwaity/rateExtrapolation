@@ -73,7 +73,7 @@ def rateExtrapolation(experimental_data, antimony, rates, folds = 25):
         model[rate] = estimates_df[rate].iloc[0]
     simulated = model.simulate(t_start, t_end, t_steps)
     
-    %matplotlib inline
+ 
     #first figure
     x_data = experimental_data.T.iloc[0].T
     y_data = experimental_data.T.iloc[1:].T
