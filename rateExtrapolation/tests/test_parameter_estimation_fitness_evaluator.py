@@ -55,7 +55,7 @@ def test_parameter_estimation_fitness_evaluator_1():
     '''
     Test to determine if number of rate estimation columns matches the input number of rate
     '''
-    parameter_estimates = parameter_estimation_fitness_evaluator(sb_model_fit, df, folds,rates, antimony)
+    parameter_estimates = parameter_estimation_fitness_evaluator(data,sb_model_fit, df, folds,rates, antimony)
     assert len(parameter_estimates.columns) == len(sb_model_fit.columns), (
         "R squared column was not added, try again")
     return
@@ -70,7 +70,7 @@ def test_parameter_estimation_fitness_evaluator_2():
     '''
     Test to determine estimation was run over the number of folds provided
     '''
-    parameter_estimates = parameter_estimation_fitness_evaluator(sb_model_fit, df, folds,rates, antimony)
+    parameter_estimates = parameter_estimation_fitness_evaluator(data,sb_model_fit, df, folds,rates, antimony)
     for row in range(len(parameter_estimates)):
         assert isinstance(parameter_estimates['AIC'].iloc[row], float), (
             "AIC number is not a float! this will mess up down stream processing!")
@@ -85,7 +85,7 @@ def test_parameter_estimation_fitness_evaluator_3():
     '''
     Test to determine that the column names match rates list, important in downstream processing
     '''
-    parameter_estimates = parameter_estimation_fitness_evaluator(sb_model_fit, df, folds,rates, antimony)
+    parameter_estimates = parameter_estimation_fitness_evaluator(data,sb_model_fit, df, folds,rates, antimony)
     for row in range(len(parameter_estimates)):
         assert isinstance(parameter_estimates['BIC'].iloc[row], float), (
             "BIC number is not a float! this will mess up down stream processing!")
@@ -101,7 +101,7 @@ def test_parameter_estimation_fitness_evaluator_4():
     '''
     Test to determine that the column names match rates list, important in downstream processing
     '''
-    parameter_estimates = parameter_estimation_fitness_evaluator(sb_model_fit, df, folds,rates, antimony)
+    parameter_estimates = parameter_estimation_fitness_evaluator(data,sb_model_fit, df, folds,rates, antimony)
     for row in range(len(parameter_estimates)):
         assert isinstance(parameter_estimates['Reduced χ²'].iloc[row], float), (
             "Reduced χ² number is not a float! this will mess up down stream processing!")
@@ -117,7 +117,7 @@ def test_parameter_estimation_fitness_evaluator_5():
     '''
     Test to determine that the column names match rates list, important in downstream processing
     '''
-    parameter_estimates = parameter_estimation_fitness_evaluator(sb_model_fit, df, folds,rates, antimony)
+    parameter_estimates = parameter_estimation_fitness_evaluator(data,sb_model_fit, df, folds,rates, antimony)
     for row in range(len(parameter_estimates)):
         assert isinstance(parameter_estimates['χ²'].iloc[row], float), (
             "χ² number is not a float! this will mess up down stream processing!")
@@ -133,7 +133,7 @@ def test_parameter_estimation_fitness_evaluator_6():
     '''
     Test to determine that the column names match rates list, important in downstream processing
     '''
-    parameter_estimates = parameter_estimation_fitness_evaluator(sb_model_fit, df, folds,rates, antimony)
+    parameter_estimates = parameter_estimation_fitness_evaluator(data,sb_model_fit, df, folds,rates, antimony)
     for row in range(len(parameter_estimates)):
         assert isinstance(parameter_estimates['R²'].iloc[row], float), (
             "R² number is not a float! this will mess up down stream processing!")
