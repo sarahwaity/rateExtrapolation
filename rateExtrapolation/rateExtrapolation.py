@@ -10,13 +10,10 @@ import datetime
 import tellurium as te
 import SBstoat as SB
 
-
 from K_folds_data_splitter import K_folds_data_splitter
 from SBstoat_model_fitting_to_folds import SBstoat_model_fitting_to_folds
 from parameter_estimation_fitness_evaluator import parameter_estimation_fitness_evaluator
 
-<<<<<<< HEAD
-=======
 import urllib.request
 from SBstoat.namedTimeseries import NamedTimeseries, TIME
 from SBstoat.modelFitter import ModelFitter
