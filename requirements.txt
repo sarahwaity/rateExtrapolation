@@ -3,6 +3,7 @@
 
 matplotlib == 3.3.4
 numpy == 1.20.2
+openpyxl == 3.0.7
 pandas == 1.2.4
 SBstoat == 1.161
 tellurium == 2.2.0
