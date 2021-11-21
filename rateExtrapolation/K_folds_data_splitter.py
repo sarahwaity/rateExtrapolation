@@ -1,5 +1,6 @@
 
 import pandas as pd
+import numpy as np
 
 
 def K_folds_data_splitter(experimental_data, folds):
