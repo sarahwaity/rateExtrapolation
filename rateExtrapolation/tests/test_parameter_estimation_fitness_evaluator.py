@@ -12,6 +12,7 @@ import tellurium as TE
 # Importing libraries for property tests
 import math
 import pandas as pd
+import SBstoat as SB
 
 
 # In[2]:
