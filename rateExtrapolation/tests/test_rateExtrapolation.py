@@ -26,7 +26,7 @@ antimony = """
 
 rates = ['k1','k2','k3']
 
-try_it_out,f1,f2,f3 = rate_Extrapolation(data, antimony, rates, folds = 25)
+try_it_out,f1,f2,f3 = rateExtrapolation(data, antimony, rates, folds = 25)
     
 
 # In[3]:
