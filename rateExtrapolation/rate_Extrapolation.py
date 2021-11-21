@@ -64,7 +64,7 @@ def rateExtrapolation(experimental_data, antimony, rates, folds = 25):
     print('Parameters Estimating...')
     estimates_df = SBstoat_model_fitting_to_folds(antimony, rates, cross_val_df,pathway_parameters)
     print('Parameters Estimated!')
-    estimates_df = parameter_estimation_fitness_evaluator(estimates_df, cross_val_df, folds,model)
+    estimates_df = parameter_estimation_fitness_evaluator(experimental_data, estimates_df, cross_val_df, folds, rates, antimony)
     print('Estimations evaluated!')
     
     #Final Model Simulation with chosen best rates
