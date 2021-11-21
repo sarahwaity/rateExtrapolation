@@ -9,6 +9,7 @@ from SBstoat_model_fitting_to_folds import SBstoat_model_fitting_to_folds
 # Importing libraries for property tests
 import math
 import pandas as pd
+import numpy as np
 
 
 # In[2]:
