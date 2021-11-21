@@ -10,7 +10,7 @@ import tellurium as te
 #evaluate goodness of rate estimations by simulating and caluclating...
 #stats from rate constants
 
-def parameter_estimation_fitness_evaluator(estimates_df, cross_val_df, folds, rates, antimony):
+def parameter_estimation_fitness_evaluator(data, estimates_df, cross_val_df, folds, rates, antimony):
     """ Simulates with K-fold approximations, returns Rsquared for each fold
     input
     -----
@@ -22,6 +22,11 @@ def parameter_estimation_fitness_evaluator(estimates_df, cross_val_df, folds, ra
     output
     ------
     estimates_df with added R squared column"""
+    
+    t_start = data.T.iloc[0].values[0]
+    t_end = data.T.iloc[0].values[-1]
+    t_steps = len(data.T.iloc[0].values)
+
     
     model = te.loada(antimony)
     
