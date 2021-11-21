@@ -8,6 +8,7 @@ from K_folds_data_splitter import K_folds_data_splitter
 # Importing libraries for property tests
 import math
 import pandas as pd
+import numpy as np
 
 
 # In[2]:
