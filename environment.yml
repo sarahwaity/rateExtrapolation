@@ -8,3 +8,4 @@ dependencies:
   - pip:
     - SBstoat == 1.161
     - tellurium == 2.2.0
+    - openpyxl == 3.0.7
