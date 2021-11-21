@@ -51,7 +51,7 @@ sb_model_fit = SBstoat_model_fitting_to_folds(antimony, rates, df,pathway_parame
 # In[3]:
 
 
-def test_parameter_estimation_fitness_evaluator_1():
+def test_parameter_estimation_fitness_evaluator_1(sb_model_fit, df, folds, model):
     '''
     Test to determine if number of rate estimation columns matches the input number of rate
     '''
@@ -66,7 +66,7 @@ def test_parameter_estimation_fitness_evaluator_1():
 # In[4]:
 
 
-def test_parameter_estimation_fitness_evaluator_2():
+def test_parameter_estimation_fitness_evaluator_2(sb_model_fit, df, folds, model):
     '''
     Test to determine estimation was run over the number of folds provided
     '''
@@ -81,7 +81,7 @@ def test_parameter_estimation_fitness_evaluator_2():
 # In[5]:
 
 
-def test_parameter_estimation_fitness_evaluator_3():
+def test_parameter_estimation_fitness_evaluator_3(sb_model_fit, df, folds, model):
     '''
     Test to determine that the column names match rates list, important in downstream processing
     '''
@@ -97,7 +97,7 @@ def test_parameter_estimation_fitness_evaluator_3():
 # In[6]:
 
 
-def test_parameter_estimation_fitness_evaluator_4():
+def test_parameter_estimation_fitness_evaluator_4(sb_model_fit, df, folds, model):
     '''
     Test to determine that the column names match rates list, important in downstream processing
     '''
@@ -113,7 +113,7 @@ def test_parameter_estimation_fitness_evaluator_4():
 # In[7]:
 
 
-def test_parameter_estimation_fitness_evaluator_5():
+def test_parameter_estimation_fitness_evaluator_5(sb_model_fit, df, folds, model):
     '''
     Test to determine that the column names match rates list, important in downstream processing
     '''
@@ -129,7 +129,7 @@ def test_parameter_estimation_fitness_evaluator_5():
 # In[8]:
 
 
-def test_parameter_estimation_fitness_evaluator_6():
+def test_parameter_estimation_fitness_evaluator_6(sb_model_fit, df, folds, model):
     '''
     Test to determine that the column names match rates list, important in downstream processing
     '''
