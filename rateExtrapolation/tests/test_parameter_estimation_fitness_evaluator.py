@@ -32,6 +32,8 @@ antimony = """
 
 rates = ['k1','k2','k3']
 
+folds = 4
+
 pathway_parameters = []
 for rate in rates:   
     pathway_parameters.append(SB.Parameter(rate, lower=0, value=500, upper=10))
