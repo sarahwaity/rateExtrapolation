@@ -38,11 +38,11 @@ pathway_parameters = []
 for rate in rates:   
     pathway_parameters.append(SB.Parameter(rate, lower=0, value=500, upper=10))
     
-model = te.loada(antimony)
 
 t_start = data.T.iloc[0].values[0]
 t_end = data.T.iloc[0].values[-1]
 t_steps = len(data.T.iloc[0].values)
+
 
 sb_model_fit = SBstoat_model_fitting_to_folds(antimony, rates, df,pathway_parameters)
 
@@ -51,10 +51,13 @@ sb_model_fit = SBstoat_model_fitting_to_folds(antimony, rates, df,pathway_parame
 # In[3]:
 
 
-def test_parameter_estimation_fitness_evaluator_1(sb_model_fit, df, folds, model):
+def test_parameter_estimation_fitness_evaluator_1():
     '''
     Test to determine if number of rate estimation columns matches the input number of rate
     '''
+    
+    model = te.loada(antimony)
+    
     parameter_estimates = parameter_estimation_fitness_evaluator(sb_model_fit, df, folds, model)
     assert len(parameter_estimates.columns) == len(sb_model_fit.columns), (
         "R squared column was not added, try again")
@@ -66,10 +69,11 @@ def test_parameter_estimation_fitness_evaluator_1(sb_model_fit, df, folds, model
 # In[4]:
 
 
-def test_parameter_estimation_fitness_evaluator_2(sb_model_fit, df, folds, model):
+def test_parameter_estimation_fitness_evaluator_2():
     '''
     Test to determine estimation was run over the number of folds provided
     '''
+    model = te.loada(antimony)
     parameter_estimates = parameter_estimation_fitness_evaluator(sb_model_fit, df, folds, model)
     for row in range(len(parameter_estimates)):
         assert isinstance(parameter_estimates['AIC'].iloc[row], float), (
@@ -81,10 +85,11 @@ def test_parameter_estimation_fitness_evaluator_2(sb_model_fit, df, folds, model
 # In[5]:
 
 
-def test_parameter_estimation_fitness_evaluator_3(sb_model_fit, df, folds, model):
+def test_parameter_estimation_fitness_evaluator_3():
     '''
     Test to determine that the column names match rates list, important in downstream processing
     '''
+    model = te.loada(antimony)
     parameter_estimates = parameter_estimation_fitness_evaluator(sb_model_fit, df, folds, model)
     for row in range(len(parameter_estimates)):
         assert isinstance(parameter_estimates['BIC'].iloc[row], float), (
@@ -97,10 +102,11 @@ def test_parameter_estimation_fitness_evaluator_3(sb_model_fit, df, folds, model
 # In[6]:
 
 
-def test_parameter_estimation_fitness_evaluator_4(sb_model_fit, df, folds, model):
+def test_parameter_estimation_fitness_evaluator_4():
     '''
     Test to determine that the column names match rates list, important in downstream processing
     '''
+    model = te.loada(antimony)
     parameter_estimates = parameter_estimation_fitness_evaluator(sb_model_fit, df, folds, model)
     for row in range(len(parameter_estimates)):
         assert isinstance(parameter_estimates['Reduced χ²'].iloc[row], float), (
@@ -113,10 +119,11 @@ def test_parameter_estimation_fitness_evaluator_4(sb_model_fit, df, folds, model
 # In[7]:
 
 
-def test_parameter_estimation_fitness_evaluator_5(sb_model_fit, df, folds, model):
+def test_parameter_estimation_fitness_evaluator_5():
     '''
     Test to determine that the column names match rates list, important in downstream processing
     '''
+    model = te.loada(antimony)
     parameter_estimates = parameter_estimation_fitness_evaluator(sb_model_fit, df, folds, model)
     for row in range(len(parameter_estimates)):
         assert isinstance(parameter_estimates['χ²'].iloc[row], float), (
@@ -129,10 +136,11 @@ def test_parameter_estimation_fitness_evaluator_5(sb_model_fit, df, folds, model
 # In[8]:
 
 
-def test_parameter_estimation_fitness_evaluator_6(sb_model_fit, df, folds, model):
+def test_parameter_estimation_fitness_evaluator_6():
     '''
     Test to determine that the column names match rates list, important in downstream processing
     '''
+    model = te.loada(antimony)
     parameter_estimates = parameter_estimation_fitness_evaluator(sb_model_fit, df, folds, model)
     for row in range(len(parameter_estimates)):
         assert isinstance(parameter_estimates['R²'].iloc[row], float), (
