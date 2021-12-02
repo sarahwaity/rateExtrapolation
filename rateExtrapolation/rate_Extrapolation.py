@@ -115,7 +115,7 @@ def rateExtrapolation(experimental_data, antimony, rates, folds = 25):
                 axes[i,j].set_ylabel('Count')
                 axes[i,j].set_title(name+' Exptrapolated Rates', fontweight = 'bold')
                 props = dict( facecolor='white', alpha=0.5)
-                txt_str = 'Best ' + name+' = '+ str(np.round(estimates_df[name][0],3))
+                txt_str = 'Best ' + name+' = '+ str(np.round(estimates_df[name].iloc[0],3))
                 axes[i,j].text(0.65, 0.95, txt_str, transform=axes[i,j].transAxes, fontsize=12, verticalalignment='top', bbox=props)
             elif i < j:
                 axes[i,j].axis('off')
