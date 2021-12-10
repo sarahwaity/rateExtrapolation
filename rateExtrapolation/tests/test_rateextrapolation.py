@@ -4,7 +4,7 @@ This file will be used to test the rateExtrapolation.py file.
 
 # Import cleaning and splitting
 
-from rate_Extrapolation import rateExtrapolation
+from rate_extrapolation import rate_extrapolation
 
 # Importing libraries for property tests
 import math
@@ -54,3 +54,4 @@ def test_rateExtrapolation_2():
     assert len(try_it_out) == len(data), (
         "Output data does not have same number of substrates as input data")
     return
+
