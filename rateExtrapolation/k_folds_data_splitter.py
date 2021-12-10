@@ -1,23 +1,23 @@
-
+'''This .py file contains the function k_folds_data_splitter described below'''
 import pandas as pd
 import numpy as np
 
 
-def K_folds_data_splitter(experimental_data, folds):
+def k_folds_data_splitter(experimental_data, folds):
     """ Splits data into k-folds train and validation sets.
-    
+
     Inputs
     ------
     experimental_data: DataFrame
     folds: number of folds (integer)
         - Default: 25
-        
+
     Outputs
     -------
     cross_val_df
         - Dataframe of K folds columns x 2 rows (Test, Train)
         - each cell is a dataframe of values
-    
+
     """
     cross_val_df = pd.DataFrame()
     indices = np.arange(len(experimental_data))
