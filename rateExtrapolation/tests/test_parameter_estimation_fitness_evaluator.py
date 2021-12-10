@@ -3,8 +3,8 @@ This file will be used to test the parameter_estimation_fitness_evaluator.py fil
 """
 
 # Import cleaning and splitting
-from K_folds_data_splitter import K_folds_data_splitter
-from SBstoat_model_fitting_to_folds import SBstoat_model_fitting_to_folds
+from k_folds_data_splitter import k_folds_data_splitter
+from sbstoat_model_fitting_to_folds import sbstoat_model_fitting_to_folds
 from parameter_estimation_fitness_evaluator import parameter_estimation_fitness_evaluator
 import tellurium as te
 
@@ -19,7 +19,7 @@ import SBstoat as SB
 
 data = pd.read_csv('data/test_function_data.csv', index_col=0)
 
-df = K_folds_data_splitter(data, folds = 4)
+df = k_folds_data_splitter(data, folds = 4)
 
 antimony = """
     S1 -> S2; k1*S1;
@@ -44,7 +44,7 @@ t_end = data.T.iloc[0].values[-1]
 t_steps = len(data.T.iloc[0].values)
 
 
-sb_model_fit = SBstoat_model_fitting_to_folds(antimony, rates, df,pathway_parameters)
+sb_model_fit = sbstoat_model_fitting_to_folds(antimony, rates, df,pathway_parameters)
 
     
 
@@ -138,3 +138,4 @@ def test_parameter_estimation_fitness_evaluator_6():
         assert isinstance(parameter_estimates['R²'].iloc[row], float), (
             "R² number is not a float! this will mess up down stream processing!")
     return
+
