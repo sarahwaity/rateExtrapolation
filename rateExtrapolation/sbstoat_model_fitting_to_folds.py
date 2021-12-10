@@ -51,7 +51,7 @@ def sbstoat_model_fitting_to_folds(antimony, rates, cross_val_df,pathway_paramet
         chi_sqr_start= (fitter.reportFit().find('chi-square         = ')+
             len('chi-square         = '))
         chi_sqr_end = fitter.reportFit()[chi_sqr_start:].find('\n') + chi_sqr_start
-        chi_sqr = (fitter.reportFit()[chi_sqr_start:chi_sqr_end]
+        chi_sqr = fitter.reportFit()[chi_sqr_start:chi_sqr_end]
 
         temp_dict['χ²'] = np.round(float(chi_sqr),2)
 
