@@ -2,17 +2,18 @@
 [![Build Status](https://app.travis-ci.com/sarahwaity/rateExtrapolation.svg?branch=main)](https://app.travis-ci.com/sarahwaity/rateExtrapolation)
 [![license](https://img.shields.io/github/license/sarahwaity/rateExtrapolation.svg?style=flat-square)](https://github.com/sarahwaity/rateExtrapolation.svg/main/LICENSE)
 
-## Video Example
-https://youtu.be/ykR0b9ED8NI
+## pip installable!
+pip install rateExtrapolation
 
 ## Colab Notebook
 https://colab.research.google.com/drive/15WFk4O50tOGPuSiALpbqsB5noQzPKwFr?usp=sharing
 
+## Video Example
+https://youtu.be/ykR0b9ED8NI
+
 ## Executive Summary
 The purpose of this package is to enable users to very simply determine reaction kinetics from experimental data. When the user inputs the required inputs, they will be returned an estimation of the rate constants that underly their observation. 
 
-## pip installable!
-pip install rateExtrapolation
 
 ## User Profile
 ### Experimentalist
