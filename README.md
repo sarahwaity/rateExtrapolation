@@ -2,6 +2,15 @@
 [![Build Status](https://app.travis-ci.com/sarahwaity/rateExtrapolation.svg?branch=main)](https://app.travis-ci.com/sarahwaity/rateExtrapolation)
 [![license](https://img.shields.io/github/license/sarahwaity/rateExtrapolation.svg?style=flat-square)](https://github.com/sarahwaity/rateExtrapolation.svg/main/LICENSE)
 
+## Video Example
+https://youtu.be/ykR0b9ED8NI
+
+## Colab Notebook
+
+
+## Executive Summary
+
+
 ## Background
 In order to properly model any molecular interaction, the kinetics law needs to be determined. This can be determined through trial and error, where the user tries an array of constants and chooses the fit that best fits wet lab observations. This method is time consuming and leads to issues with model reproducibility. Another method is through determination of rates by analyzing empirical data. Though, this method requires demanding signal processing and is typically handed over to the computationalist to make decisions about how the rate fits the observed phenomena. My hope is to simplify the process such that the experimentalist can observe the extrapolated rate constants and make their own decisions regarding how well the constants are able to describe the data. 
 
