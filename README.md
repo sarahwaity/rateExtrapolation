@@ -6,7 +6,7 @@
 https://youtu.be/ykR0b9ED8NI
 
 ## Colab Notebook
-
+https://colab.research.google.com/drive/15WFk4O50tOGPuSiALpbqsB5noQzPKwFr?usp=sharing
 
 ## Executive Summary
 The purpose of this package is to enable users to very simply determine reaction kinetics from experimental data. When the user inputs the required inputs, they will be returned an estimation of the rate constants that underly their observation. 
