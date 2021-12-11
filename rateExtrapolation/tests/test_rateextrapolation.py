@@ -35,7 +35,7 @@ def test_rateExtrapolation_1():
     '''
     Test to determine if modeled data has the same columns as input experimental data
     '''
-    try_it_out,f1,f2,f3 = rateExtrapolation(data, antimony, rates, folds = 25)
+    try_it_out,f1,f2,f3 = rateextrapolation(data, antimony, rates, folds = 25)
     assert len(try_it_out.columns) == len(data.columns), (
         "Output data does not have same number of substrates as input data")
     return
@@ -50,7 +50,7 @@ def test_rateExtrapolation_2():
     '''
     Test to determine if modeled data has the same number of rows as input experimental data
     '''
-    try_it_out,f1,f2,f3 = rateExtrapolation(data, antimony, rates, folds = 25)
+    try_it_out,f1,f2,f3 = rateextrapolation(data, antimony, rates, folds = 25)
     assert len(try_it_out) == len(data), (
         "Output data does not have same number of substrates as input data")
     return
