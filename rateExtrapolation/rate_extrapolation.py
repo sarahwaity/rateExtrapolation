@@ -11,9 +11,9 @@ import matplotlib.backends.backend_pdf
 import tellurium as te
 import SBstoat as SB
 
-from rateExtrapolation.k_folds_data_splitter import k_folds_data_splitter
-from rateExtrapolation.sbstoat_model_fitting_to_folds import sbstoat_model_fitting_to_folds
-from rateExtrapolation.parameter_estimation_fitness_evaluator import parameter_estimation_fitness_evaluator
+from k_folds_data_splitter import k_folds_data_splitter
+from sbstoat_model_fitting_to_folds import sbstoat_model_fitting_to_folds
+from parameter_estimation_fitness_evaluator import parameter_estimation_fitness_evaluator
 
 
 
