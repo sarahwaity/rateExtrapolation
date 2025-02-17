@@ -1,6 +1,4 @@
 # rateExtrapolation.py
-[![Build Status](https://app.travis-ci.com/sarahwaity/rateExtrapolation.svg?branch=main)](https://app.travis-ci.com/sarahwaity/rateExtrapolation)
-
 [![license](https://img.shields.io/github/license/sarahwaity/rateExtrapolation.svg?style=flat-square)](https://github.com/sarahwaity/rateExtrapolation.svg/main/LICENSE)
 
 ## pip installable!
